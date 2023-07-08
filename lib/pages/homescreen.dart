@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gymast/pages/favorite_page.dart';
+import 'package:gymast/pages/sample_items.dart';
 import 'package:gymast/widgets/alpha_widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,21 +13,27 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.grey.shade200,
       appBar:
           AppBar(elevation: 0, backgroundColor: Colors.grey.shade200, actions: [
-        Icon(
-          Icons.notifications,
-          size: 30,
-          color: Colors.grey.shade400,
+        GestureDetector(
+          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const FavoritesPage() )),
+          child: Icon(
+            Icons.favorite,
+            size: 30,
+            color: Colors.grey.shade400,
+          ),
         ),
         const SizedBox(
           width: 10,
         ),
         Padding(
           padding: const EdgeInsets.only(right: 10),
+          child:   GestureDetector(
+          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SampleLikeItems() )),
           child: Icon(
             Icons.person,
-            size: 35,
+            size: 30,
             color: Colors.grey.shade400,
           ),
+        ),
         ),
       ]),
       body: SingleChildScrollView(

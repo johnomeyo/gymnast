@@ -6,6 +6,8 @@ import 'package:gymast/pageviews/pageview1.dart';
 import 'package:gymast/pageviews/pageview2.dart';
 import 'package:gymast/pageviews/pageview3.dart';
 import 'package:gymast/pageviews/pageview4.dart';
+import 'package:gymast/provider/fav_provider.dart';
+import 'package:provider/provider.dart';
 // import 'package:gymast/pages/homescreen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -26,7 +28,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      home: const Home(),
+      home: MultiProvider(providers: [
+        ChangeNotifierProvider(create: (context) =>FavoriteProvider() ),
+      ],
+      child: const Home()),
     );
   }
 }
@@ -60,7 +65,7 @@ class _HomeState extends State<Home> {
           ],
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
