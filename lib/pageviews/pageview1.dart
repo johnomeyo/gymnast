@@ -31,7 +31,7 @@ class PageView1 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Supplements",
+                    "Training",
                     style: GoogleFonts.lato(
                         textStyle: const TextStyle(
                             fontSize: 45, color: Colors.white, letterSpacing: 2)),

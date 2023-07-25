@@ -12,7 +12,7 @@ class PageView4 extends StatelessWidget {
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
-                    "https://images.unsplash.com/photo-1659090588548-a9066821d87e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"),
+                    "https://images.unsplash.com/photo-1554177255-61502b352de3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"),
                 fit: BoxFit.cover)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -31,7 +31,7 @@ class PageView4 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Supplements",
+                    "Social",
                     style: GoogleFonts.lato(
                         textStyle: const TextStyle(
                             fontSize: 45,
@@ -42,7 +42,7 @@ class PageView4 extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    "Workouts plans designed to help you achieve your fitness goals- whether losing weight or building muscle",
+                    "Schedule time for social interactions with friends, family, or colleagues. Human connections can provide mental support and foster creativity.",
                     style: GoogleFonts.lato(
                         textStyle:
                             const TextStyle(fontSize: 15, color: Colors.white)),

@@ -12,7 +12,7 @@ class PageView3 extends StatelessWidget {
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
-                    "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"),
+                    "https://images.unsplash.com/photo-1535868463750-c78d9543614f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80"),
                 fit: BoxFit.cover)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -32,7 +32,7 @@ class PageView3 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Training",
+                    "Projects",
                     style: GoogleFonts.lato(
                         textStyle: const TextStyle(
                             fontSize: 45, color: Colors.white, letterSpacing: 2)),
@@ -41,7 +41,7 @@ class PageView3 extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    "Workouts plans designed to help you achieve your fitness goals- whether losing weight or building muscle",
+                    "Allocate time for personal coding projects that interest you outside of work. Personal projects can be an enjoyable way to apply your skills and explore new technologies.",
                     style: GoogleFonts.lato(
                         textStyle:
                             const TextStyle(fontSize: 15, color: Colors.white)),

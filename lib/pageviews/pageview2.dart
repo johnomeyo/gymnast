@@ -12,7 +12,7 @@ class PageView2 extends StatelessWidget {
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
-                    "https://images.unsplash.com/photo-1624513764370-f29d72dc4e19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=442&q=80"),
+                    "https://plus.unsplash.com/premium_photo-1669137055853-054a6a5a19b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"),
                 fit: BoxFit.cover)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -39,8 +39,7 @@ class PageView2 extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  Text(
-                    "Workouts plans designed to help you achieve your fitness goals- whether losing weight or building muscle",
+                  Text('As a developer, its important to fuel your body with nutritious meals that provide the energy and focus you need for long hours of work. ',
                     style: GoogleFonts.lato(
                         textStyle:
                             const TextStyle(fontSize: 15, color: Colors.white)),
