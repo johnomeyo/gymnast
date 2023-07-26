@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymast/Planviews/mealPlan.dart';
-import 'package:gymast/pages/favorite_page.dart';
+import 'package:gymast/pages/notifications_page.dart';
 import 'package:gymast/Planviews/trainigplanview.dart';
-import 'package:gymast/pages/sample_items.dart';
 import 'package:gymast/widgets/alpha_widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -28,7 +27,7 @@ class HomeScreen extends StatelessWidget {
               onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const NotificationsPage())),
+                      builder: (context) =>  NotificationsPage())),
               child: Icon(
                 Icons.notifications,
                 size: 30,
