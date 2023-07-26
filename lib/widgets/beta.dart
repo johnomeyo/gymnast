@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TrainingPlanTiles extends StatelessWidget {
-  const TrainingPlanTiles({super.key, required this.training, required this.description, required this.link});
+  const TrainingPlanTiles(
+      {super.key,
+      required this.training,
+      required this.description,
+      required this.link});
   final String training;
   final String description;
   final String link;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -20,9 +26,9 @@ class TrainingPlanTiles extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           description,
-          style:const TextStyle(fontSize: 17, fontWeight: FontWeight.w200),
+          style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w200),
         ),
         const SizedBox(
           height: 10,
@@ -36,13 +42,31 @@ class TrainingPlanTiles extends StatelessWidget {
             const SizedBox(
               width: 10,
             ),
-            const Text(
-              "Check out this video for guidance",
-              style: TextStyle(color: Colors.blue),
-            )
+            TextButton(
+                onPressed: () {},
+                child: const Text(
+                  "Check out this video for guidance",
+                  style: TextStyle(color: Colors.blue),
+                ))
           ],
         )
       ],
+    );
+  }
+}
+
+class FoodSamples extends StatelessWidget {
+  const FoodSamples({super.key, required this.img, });
+  final String img;
+ 
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 80,
+      width: 100,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8),
+        image: DecorationImage(image: NetworkImage(img),fit: BoxFit.cover)),
     );
   }
 }

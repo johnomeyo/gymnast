@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gymast/Planviews/mealPlan.dart';
 import 'package:gymast/pages/favorite_page.dart';
-import 'package:gymast/pages/planview.dart';
+import 'package:gymast/Planviews/trainigplanview.dart';
 import 'package:gymast/pages/sample_items.dart';
 import 'package:gymast/widgets/alpha_widgets.dart';
 
@@ -61,14 +62,15 @@ class HomeScreen extends StatelessWidget {
                 text: 'Training Plan',
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => PlanViewPage()));
+                      MaterialPageRoute(builder: (context) => const PlanViewPage()));
                 },
               ),
               TrainingTile(
                 imageUrl:
                     'https://plus.unsplash.com/premium_photo-1671485196169-01b6f45bfe46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
                 text: 'Meal Plan',
-                onTap: () {},
+                onTap: () { Navigator.push(context,
+                      MaterialPageRoute(builder: (context) =>  MealPlanView()));},
               ),
               TrainingTile(
                 imageUrl:

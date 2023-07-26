@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../pages/planview.dart';
+import '../Planviews/trainigplanview.dart';
 
 // ignore: must_be_immutable
 class TrainingTile extends StatelessWidget {
