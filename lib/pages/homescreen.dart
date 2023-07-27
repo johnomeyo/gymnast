@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymast/Planviews/mealPlan.dart';
+import 'package:gymast/Planviews/social_interaction.dart';
 import 'package:gymast/pages/notifications_page.dart';
 import 'package:gymast/Planviews/trainigplanview.dart';
 import 'package:gymast/widgets/alpha_widgets.dart';
@@ -81,7 +82,10 @@ class HomeScreen extends StatelessWidget {
                 imageUrl:
                     'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
                 text: 'Social Interaction Plan',
-                onTap: () {},
+                onTap: () {
+                   Navigator.push(context,
+                      MaterialPageRoute(builder: (context) =>   SocialInteractionPlanView()));
+                },
               ),
             ],
           ),

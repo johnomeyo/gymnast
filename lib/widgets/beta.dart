@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class TrainingPlanTiles extends StatelessWidget {
   const TrainingPlanTiles(
@@ -56,17 +55,40 @@ class TrainingPlanTiles extends StatelessWidget {
 }
 
 class FoodSamples extends StatelessWidget {
-  const FoodSamples({super.key, required this.img, });
+  const FoodSamples({
+    super.key,
+    required this.img,
+  });
   final String img;
- 
+
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 80,
       width: 100,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        image: DecorationImage(image: NetworkImage(img),fit: BoxFit.cover)),
+          borderRadius: BorderRadius.circular(8),
+          image: DecorationImage(image: NetworkImage(img), fit: BoxFit.cover)),
+    );
+  }
+}
+
+class Images extends StatelessWidget {
+  const Images({super.key, required this.imgUrl});
+  final String imgUrl;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 200,
+      width: double.infinity,
+      decoration: BoxDecoration(
+          color: Colors.grey.shade400,
+          borderRadius: BorderRadius.circular(10),
+          image:  DecorationImage(
+              image: NetworkImage(
+                  imgUrl),
+              fit: BoxFit.cover)),
     );
   }
 }
