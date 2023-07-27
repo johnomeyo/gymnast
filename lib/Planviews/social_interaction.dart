@@ -43,17 +43,20 @@ class SocialInteractionPlanView extends StatelessWidget {
                 style: style2,
               ),
               Text("Goals", style: style),
-              
               Text(
                 "1.Expand professional network by connecting with at least 5 new industry peers within the next 3 months.",
                 style: style2,
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
                 "2.Improve active listening and communication skills during social interactions.",
                 style: style2,
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
                 "3.Attend a monthly industry networking event or meetup to meet new professionals and engage in relevant discussions.",
                 style: style2,
@@ -78,7 +81,9 @@ class SocialInteractionPlanView extends StatelessWidget {
                 "1.Actively participate in industry-related LinkedIn groups and initiate conversations with professionals in the field.",
                 style: style2,
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
                 "2.Share relevant articles or insights on Twitter and engage with others' posts to foster online connections.",
                 style: style2,
@@ -101,7 +106,9 @@ class SocialInteractionPlanView extends StatelessWidget {
                 "1.Maintain a journal to reflect on social interactions, noting strengths, areas for improvement, and lessons learned",
                 style: style2,
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
                 "2.Request feedback from trusted friends or colleagues after networking events or social gatherings.",
                 style: style2,

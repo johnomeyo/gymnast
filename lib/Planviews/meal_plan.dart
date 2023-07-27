@@ -153,7 +153,6 @@ class MealPlanView extends StatelessWidget {
                 "3. Side salad with leafy greens, cucumber, and vinaigrette dressing",
                 style: style2,
               ),
-
               const SizedBox(
                 height: 10,
               ),
@@ -174,7 +173,7 @@ class MealPlanView extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-               Text(
+              Text(
                 "Dinner",
                 style: style,
               ),
@@ -199,11 +198,10 @@ class MealPlanView extends StatelessWidget {
                 "3.Mixed leafy greens salad with cherry tomatoes and balsamic dressing",
                 style: style2,
               ),
-               Text(
+              Text(
                 "4.Water or herbal tea",
                 style: style2,
               ),
-              
               const SizedBox(
                 height: 10,
               ),

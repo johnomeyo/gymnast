@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gymast/pages/youtube_player.dart';
 
 class TrainingPlanTiles extends StatelessWidget {
   const TrainingPlanTiles(
@@ -42,7 +43,12 @@ class TrainingPlanTiles extends StatelessWidget {
               width: 10,
             ),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>  YoutubeVidPage(videoUrl: link,)));
+                },
                 child: const Text(
                   "Check out this video for guidance",
                   style: TextStyle(color: Colors.blue),
@@ -85,10 +91,8 @@ class Images extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.grey.shade400,
           borderRadius: BorderRadius.circular(10),
-          image:  DecorationImage(
-              image: NetworkImage(
-                  imgUrl),
-              fit: BoxFit.cover)),
+          image:
+              DecorationImage(image: NetworkImage(imgUrl), fit: BoxFit.cover)),
     );
   }
 }
