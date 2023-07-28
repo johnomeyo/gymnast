@@ -28,10 +28,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      home: MultiProvider(providers: [
-        ChangeNotifierProvider(create: (context) =>FavoriteProvider() ),
-      ],
-      child: const Home()),
+      home: MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (context) => FavoriteProvider()),
+          ],
+          //
+          child: const Home()),
     );
   }
 }
@@ -65,7 +67,7 @@ class _HomeState extends State<Home> {
           ],
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -98,12 +100,15 @@ class _HomeState extends State<Home> {
         ),
         Container(
             alignment: const Alignment(0, 0.75),
-            child: SmoothPageIndicator(controller: _controller, count: 4,effect:   ExpandingDotsEffect(
-              activeDotColor: Colors.grey.shade600,
-              dotColor: Colors.grey.shade300,
-              dotHeight:10, 
-              dotWidth: 10
-            ),))
+            child: SmoothPageIndicator(
+              controller: _controller,
+              count: 4,
+              effect: ExpandingDotsEffect(
+                  activeDotColor: Colors.grey.shade600,
+                  dotColor: Colors.grey.shade300,
+                  dotHeight: 10,
+                  dotWidth: 10),
+            ))
       ]),
     );
   }
