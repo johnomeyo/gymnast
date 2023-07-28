@@ -6,8 +6,8 @@ class MealPlanView extends StatelessWidget {
   MealPlanView({super.key});
   final style = GoogleFonts.lato(
       textStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.w800));
-  final style2 = GoogleFonts.lato(
-      textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.w300));
+  final style2 = GoogleFonts.aBeeZee(
+      textStyle: const TextStyle( fontWeight: FontWeight.w100));
   @override
   Widget build(BuildContext context) {
     return Scaffold(

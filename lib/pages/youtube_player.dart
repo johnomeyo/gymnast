@@ -40,7 +40,7 @@ class _YoutubeVidPageState extends State<YoutubeVidPage> {
         backgroundColor: Colors.grey.shade200,
         centerTitle: true,
         title: Text(
-          "Social Interaction Plan ",
+          "Training Guide ",
           style: GoogleFonts.lato(
               textStyle: const TextStyle(
                   color: Colors.black,

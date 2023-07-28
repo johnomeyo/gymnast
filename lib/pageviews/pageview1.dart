@@ -41,7 +41,7 @@ class PageView1 extends StatelessWidget {
                   ),
                   Text(
                     "Workouts plans designed to help you achieve your fitness goals- whether losing weight or building muscle",
-                    style: GoogleFonts.lato(
+                    style: GoogleFonts.aBeeZee(
                         textStyle:
                             const TextStyle(fontSize: 15, color: Colors.white)),
                   )

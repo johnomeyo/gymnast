@@ -104,7 +104,7 @@ class _HomeState extends State<Home> {
               controller: _controller,
               count: 4,
               effect: ExpandingDotsEffect(
-                  activeDotColor: Colors.grey.shade600,
+                  activeDotColor: Colors.deepOrange,
                   dotColor: Colors.grey.shade300,
                   dotHeight: 10,
                   dotWidth: 10),
