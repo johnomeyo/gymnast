@@ -14,7 +14,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (context) => const MyApp(),
     ),
   );

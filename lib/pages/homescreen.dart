@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gymast/Planviews/meal_plan.dart';
+import 'package:gymast/Planviews/personal_projects.dart';
 import 'package:gymast/Planviews/social_interaction.dart';
 import 'package:gymast/pages/notifications_page.dart';
 import 'package:gymast/Planviews/trainigplanview.dart';
@@ -76,7 +77,8 @@ class HomeScreen extends StatelessWidget {
                 imageUrl:
                     'https://images.unsplash.com/photo-1606161290889-77950cfb67d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
                 text: 'Personal Projects Plan',
-                onTap: () {},
+                onTap: () {Navigator.push(context,
+                      MaterialPageRoute(builder: (context) =>   PersonalProjects()));},
               ),
               TrainingTile(
                 imageUrl:
