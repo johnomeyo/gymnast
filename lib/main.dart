@@ -1,6 +1,8 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:gymast/firebase_options.dart';
 import 'package:gymast/pages/homescreen.dart';
 import 'package:gymast/pageviews/pageview1.dart';
 import 'package:gymast/pageviews/pageview2.dart';
@@ -11,7 +13,9 @@ import 'package:provider/provider.dart';
 // import 'package:gymast/pages/homescreen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
     DevicePreview(
       enabled: false,
