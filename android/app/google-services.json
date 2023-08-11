@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "777445583671",
+    "project_id": "devcare-ef674",
+    "storage_bucket": "devcare-ef674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777445583671:android:3e41522824e9cd3a86c8b2",
+        "android_client_info": {
+          "package_name": "com.example.gymast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777445583671-0beansaaf02hgjlrb358913rtird4ne1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwokiL93QxUrascud5jB9mViqNHA-8qUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777445583671-0beansaaf02hgjlrb358913rtird4ne1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777445583671-f9q3v26if1qkmt02t3c365q4r2do5kqv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.gymast"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
